@@ -11,4 +11,6 @@ if(actions == "add"){
   alert(firstQuestion * secondQuestion);
 }else if(actions == "div"){
   alert(firstQuestion / secondQuestion);
+}else{
+  alert("Wrong value, try again");
 }
