@@ -1,22 +1,23 @@
 // task #1
-// let admin;
-// let name;
+
+let admin;
+let name;
  
-// name = "Джон";
+name = "Джон";
 
-// admin = name;
+admin = name;
 
-// alert(admin);
+alert(admin);
 
 // ============
 
 // task #2
 
-// let planet = "Earth";
-// let currentUser;
+let planet = "Earth";
+let currentUser;
 
-// let numToString = 10 + "10";
+let numToString = 10 + "10";
 
-// console.log(typeof(numToString));
+console.log(typeof(numToString));
 
 // ============
