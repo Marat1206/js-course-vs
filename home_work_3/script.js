@@ -2,26 +2,26 @@ let firstQuestion = +prompt("Enter first number", "");
 let secondQuestion = +prompt("Enter second number", "");
 
 function add(firstQuestion, secondQuestion){
-  alert(firstQuestion + secondQuestion);
+  return firstQuestion + secondQuestion;
 }
 
 function sub(firstQuestion, secondQuestion){
-  alert(firstQuestion - secondQuestion);
+  return firstQuestion - secondQuestion;
 }
 
 function mult(firstQuestion, secondQuestion){
-  alert(firstQuestion * secondQuestion);
+  return firstQuestion * secondQuestion;
 }
 
 function div(firstQuestion, secondQuestion){
-  alert(firstQuestion / secondQuestion);
+  return firstQuestion / secondQuestion;
 }
 
 
-add(firstQuestion, secondQuestion);
-sub(firstQuestion, secondQuestion);
-mult(firstQuestion, secondQuestion);
-div(firstQuestion, secondQuestion);
+alert(add(firstQuestion, secondQuestion)); 
+alert(sub(firstQuestion, secondQuestion));
+alert(mult(firstQuestion, secondQuestion));
+alert(div(firstQuestion, secondQuestion));
 
 
 

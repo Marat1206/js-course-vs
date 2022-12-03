@@ -3,6 +3,7 @@ let actions = prompt("What action do you want to take? (add, sub, mult, div)").t
 let firstQuestion = +prompt("Enter first number");
 let secondQuestion = +prompt("Enter first number");
 
+
 if(actions == "add"){
   alert(firstQuestion + secondQuestion);
 }else if(actions == "sub"){
