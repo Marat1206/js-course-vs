@@ -1,6 +1,6 @@
 "use strict";
 
-const howMuchPotatoes = (borch = 48, potato = 75, priceOfOnePotato = 13) => {
+const countPotatoes = (borch = 48, potato = 75, priceOfOnePotato = 13) => {
   const potatoesForLitr = potato * 4;
 
   let numberOfPotatoes = (potatoesForLitr * borch) / 1000;
@@ -10,4 +10,4 @@ const howMuchPotatoes = (borch = 48, potato = 75, priceOfOnePotato = 13) => {
   return `Количество Картошек на ${borch} литров борща: ${numberOfPotatoes} \n\n Цена за ${numberOfPotatoes} картошек составляет: ${potatoesTotalPrice} `;
 };
 
-console.log(howMuchPotatoes());
+console.log(countPotatoes());
