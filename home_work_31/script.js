@@ -1,21 +1,21 @@
 "use strict";
 
-// Function.prototype.myBind = function (context, ...args) {
-//   const foo = this;
+Function.prototype.myBind = function (context, ...args) {
+  const foo = this;
 
-//   return function (...newArgs) {
-//     const arr = [];
+  return function (...newArgs) {
+    const arr = [];
 
-//     for (let i = 0; i < args.length; i++) {
-//       mergedArgs.push(args[i]);
-//     }
-//     for (let i = 0; i < newArgs.length; i++) {
-//       mergedArgs.push(newArgs[i]);
-//     }
+    for (let i = 0; i < args.length; i++) {
+      arr.push(args[i]);
+    }
+    for (let i = 0; i < newArgs.length; i++) {
+      arr.push(newArgs[i]);
+    }
 
-//     return foo.apply(context, arr);
-//   };
-// };
+    return foo.apply(context, arr);
+  };
+};
 
 Function.prototype.myBind = function (context, ...args) {
   const foo = this;
@@ -29,13 +29,14 @@ Function.prototype.myBind = function (context, ...args) {
 
 
 const obj = {
-  name: 'Alice',
+  name: 'Marat',
 };
 
-function sayHello() {
-  return `Hello, ${this.name}!`;
+function sayHello(a, b) {
+  console.log(`Hello, ${this.name}!`);
+  console.log(a + b);
 }
 
 const boundSayHello = sayHello.myBind(obj);
 
-console.log(boundSayHello());
+console.log(boundSayHello(5, 5));
